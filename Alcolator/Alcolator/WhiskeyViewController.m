@@ -47,8 +47,15 @@
     } else {
         whiskeyText = NSLocalizedString(@"shots", @"plural of shot");
     }
+    // Text to update the ResultText Label
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.BeerPercentTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
+    // Text to update the title
+    NSString *WhiskeyresultTitle = [NSString stringWithFormat:NSLocalizedString(@"Whiskey(%.1f  %@ )", nil), numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText]
+    //Updates the resultLabel with the result of amount of whiskey shots
     self.resultLabel.text = resultText;
+        //Updates the whiskey View Title with the result of amount of whiskey shots
+    self.title = WhiskeyresultTitle;
+  
 }
 
 

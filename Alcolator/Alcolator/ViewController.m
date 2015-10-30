@@ -68,7 +68,11 @@
     }
     // generate the result text, and display it on the label
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of wine.", nil), numberOfBeers, beerText,  [self.BeerPercentTextField.text floatValue], numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
+    NSString *resultTitle = [NSString stringWithFormat:NSLocalizedString(@"Wine(%.1f  %@ )", nil), numberOfWineGlassesForEquivalentAlcoholAmount, wineText];
+    //Updates the resultText Label with the result of amount of wine glasses
     self.resultLabel.text = resultText;
+       //Updates the wine View Title with the result of amount of wine glasses
+    self.title = resultTitle;
 
 }
 
