@@ -33,8 +33,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-Y6-B35">
-                                <rect key="frame" x="35" y="194" width="530" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="????" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-Y6-B35">
+                                <rect key="frame" x="249" y="192" width="92" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -45,16 +45,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="dg0-Y6-B35" firstAttribute="centerX" secondItem="4Ax-g6-lzn" secondAttribute="centerX" id="6d7-L2-3y9"/>
                             <constraint firstItem="5fg-Xw-Hhj" firstAttribute="centerX" secondItem="G82-2k-QWi" secondAttribute="centerX" id="GQI-sN-2aH"/>
-                            <constraint firstItem="dg0-Y6-B35" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Hza-Bz-svk"/>
                             <constraint firstItem="G82-2k-QWi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="JXH-1M-VRo"/>
+                            <constraint firstItem="dg0-Y6-B35" firstAttribute="top" secondItem="4Ax-g6-lzn" secondAttribute="bottom" constant="26" id="N4D-fL-oNm"/>
                             <constraint firstItem="5fg-Xw-Hhj" firstAttribute="width" secondItem="G82-2k-QWi" secondAttribute="width" id="Npt-HF-Ffb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dg0-Y6-B35" secondAttribute="trailing" constant="15" id="UDq-Ih-uWP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G82-2k-QWi" secondAttribute="trailing" constant="20" id="WEM-4t-hzc"/>
                             <constraint firstItem="4Ax-g6-lzn" firstAttribute="top" secondItem="5fg-Xw-Hhj" secondAttribute="bottom" constant="36" id="XHB-Vr-jCc"/>
                             <constraint firstItem="5fg-Xw-Hhj" firstAttribute="top" secondItem="G82-2k-QWi" secondAttribute="bottom" constant="14" id="Xzw-hd-gSw"/>
                             <constraint firstItem="4Ax-g6-lzn" firstAttribute="centerX" secondItem="5fg-Xw-Hhj" secondAttribute="centerX" id="hBT-j2-jbh"/>
-                            <constraint firstItem="dg0-Y6-B35" firstAttribute="top" secondItem="4Ax-g6-lzn" secondAttribute="bottom" constant="28" id="iCk-aa-tTN"/>
+                            <constraint firstItem="dg0-Y6-B35" firstAttribute="width" secondItem="4Ax-g6-lzn" secondAttribute="width" id="hWh-vJ-xOn"/>
                             <constraint firstItem="G82-2k-QWi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wC2-ev-osd"/>
                         </constraints>
                         <connections>
