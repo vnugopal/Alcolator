@@ -157,7 +157,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hmh-qR-etd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WTH-7k-HTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="QaH-ck-MFr" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tCf-Mu-M2c">
@@ -171,6 +170,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="aP5-1q-XQZ"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTH-7k-HTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

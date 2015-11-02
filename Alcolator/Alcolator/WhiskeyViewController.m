@@ -49,6 +49,8 @@
     }
     NSString *resultText = [NSString stringWithFormat:NSLocalizedString(@"%d %@ (with %.2f%% alcohol) contains as much alcohol as %.1f %@ of whiskey.", nil), numberOfBeers, beerText, [self.BeerPercentTextField.text floatValue], numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     self.resultLabel.text = resultText;
+    //Sets the tabbarItem Badge value with number of Whiskey Glasses
+     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) numberOfWhiskeyGlassesForEquivalentAlcoholAmount]];
 }
 
 
