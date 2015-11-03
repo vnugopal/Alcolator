@@ -113,9 +113,23 @@
      [self addButtonTargets];
     for (UIView *viewToAdd in @[self.webView, self.textField, self.backButton, self.forwardButton, self.stopButton, self.reloadButton]) {
         [mainView addSubview:viewToAdd];
+        
     }
     
     self.view = mainView;
+    
+    //Welcome Alert
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"YO!!!", @"Welcome to Bloc Browser")
+                                                                   message:@"Welcome to LALA Land. Take a ride by browsing to your favourite site !!! "
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil)
+                                                       style:UIAlertActionStyleCancel handler:nil];
+    
+    [alert addAction:okAction];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
