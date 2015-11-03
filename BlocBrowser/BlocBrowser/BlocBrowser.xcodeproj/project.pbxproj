@@ -486,6 +486,7 @@
 				7558E9A01BE7E3F20071B65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7558E9A11BE7E3F20071B65F /* Build configuration list for PBXNativeTarget "BlocBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				7558E9A31BE7E3F20071B65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7558E9A41BE7E3F20071B65F /* Build configuration list for PBXNativeTarget "BlocBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +504,7 @@
 				7558E9A61BE7E3F20071B65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
