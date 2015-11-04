@@ -91,7 +91,7 @@
             labelX = CGRectGetWidth(self.bounds) / 2;
         }
        //Playing around with different Values
-       // thisLabel.frame = CGRectMake(labelX-1, labelY-1, labelWidth-1, labelHeight);
+       thisLabel.frame = CGRectMake(labelX-1, labelY-1, labelWidth-1, labelHeight);
 
     }
 }
