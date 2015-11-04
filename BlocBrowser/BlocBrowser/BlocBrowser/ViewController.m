@@ -60,16 +60,16 @@
     self.textField.text = nil;
     [self updateButtonsAndTitle];
 }
-
+// using the constantsdefined (using #define) at the beginning
 
 - (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
-    if ([title isEqual:NSLocalizedString(@"Back", @"Back command")]) {
+    if ([title isEqual:NSLocalizedString(kWebBrowserBackString, @"Back command")]) {
         [self.webView goBack];
-    } else if ([title isEqual:NSLocalizedString(@"Forward", @"Forward command")]) {
+    } else if ([title isEqual:NSLocalizedString(kWebBrowserForwardString, @"Forward command")]) {
         [self.webView goForward];
-    } else if ([title isEqual:NSLocalizedString(@"Stop", @"Stop command")]) {
+    } else if ([title isEqual:NSLocalizedString(kWebBrowserStopString, @"Stop command")]) {
         [self.webView stopLoading];
-    } else if ([title isEqual:NSLocalizedString(@"Refresh", @"Reload command")]) {
+    } else if ([title isEqual:NSLocalizedString(kWebBrowserRefreshString, @"Reload command")]) {
         [self.webView reload];
     }
 }
