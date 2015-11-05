@@ -130,16 +130,45 @@
     
     NSString *URLString = textField.text;
     
-    NSURL *URL = [NSURL URLWithString:URLString];
+    // Ensure URL is properly ending .com
     
-    if (!URL.scheme) {
-        // The user didn't type http: or https:
-        URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
+    if ([URLString hasSuffix:@".com"]){
+        
+        
+        NSURL *URL = [NSURL URLWithString:URLString];
+        
+        
+        
+        if (!URL.scheme) {
+            // The user didn't type http: or https:
+            URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
+        }
+        
+        if (URL) {
+            NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+            [self.webView loadRequest:request];
+        }
     }
     
-    if (URL) {
-        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-        [self.webView loadRequest:request];
+    //If text entered does not end with .com treat it as a search string for google url. Additionally if the string has empty spaces replace with +
+    else
+    {
+        NSString *gSearch = @"http://www.google.com/search?q=";
+        NSString *refinedURLString = [URLString stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+        NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", gSearch,refinedURLString ]];
+        
+        
+        
+        if (!URL.scheme) {
+            // The user didn't type http: or https:
+            URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
+        }
+        
+        if (URL) {
+            NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+            [self.webView loadRequest:request];
+        }
+        
     }
     
     return NO;

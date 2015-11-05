@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AwesomeFloatingToolbar.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AwesomeFloatingToolbarDelegate>
 
  - (void) resetWebView;
 
